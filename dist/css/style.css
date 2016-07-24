@@ -93,6 +93,9 @@ h6 {
 .full-header header.wt-bg .nav-bar ul li a {
   color: #000;
 }
+.full-header header.wt-bg .nav-bar ul li a:hover {
+  color: #fff;
+}
 .full-header header.wt-bg .logo svg .fil0 {
   fill: #000;
 }
@@ -122,15 +125,16 @@ h6 {
 }
 .full-header header .nav-bar ul li a {
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-family: Raleway, arial, sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 5px 17px;
+  padding: 5px 13px 4px;
   text-transform: uppercase;
 }
 .full-header header .nav-bar ul li a:hover {
-  background: #5D9CEC;
+  background: #fe6f00;
 }
 .full-header .slide-box {
   background: #45494c none no-repeat scroll center center / cover;

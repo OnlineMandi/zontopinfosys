@@ -29,6 +29,21 @@ $(document).ready(function(){
         }
     });
 
+
+
+
+
+    //Click event to scroll to top
+    $('.nav-bar ul li a').click(function(){
+        var datalink = $(this).attr("data-link");
+        datalink = "[data-target='"+datalink+"']";
+        var toppos = $(datalink).offset().top;
+        toppos-=55;
+        $('html, body').stop(true,false).animate({scrollTop : toppos},800);
+        return false;
+    });
+
+
 });
 
 

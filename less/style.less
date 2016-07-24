@@ -61,6 +61,9 @@ h1,h2,h3,h4,h5,h6{
       position: fixed;
       .nav-bar ul li a {
         color: #000;
+        &:hover{
+          color:#fff;
+        }
       }
       .logo{
         svg{
@@ -94,15 +97,16 @@ h1,h2,h3,h4,h5,h6{
           margin-left: 10px;
           a{
             color: #fff;
+            cursor: pointer;
             display: inline-block;
-            font-family: Raleway,arial, sans-serif;
+            font-family: Raleway,arial,sans-serif;
             font-weight: 600;
             letter-spacing: 1px;
-            padding: 5px 17px;
+            padding: 5px 13px 4px;
             text-transform: uppercase;
             &:extend(.transition);
             &:hover{
-              background:#5D9CEC;
+              background:#fe6f00;
             }
           }
         }

@@ -32,7 +32,7 @@
 
 </head>
 <body>
-    <div class="full-header">
+    <div class="full-header" data-target="home">
         <header>
             <div class="container">
                 <div class="logo">
@@ -40,10 +40,10 @@
                          <defs>
                           <style type="text/css">
                            <![CDATA[
-                           .str1 {stroke:#0093DD;stroke-width:0.003}
-                           .str0 {stroke:#0093DD;stroke-width:0.0138898}
+                           .str1 {stroke:#fe6f00;stroke-width:0.003}
+                           .str0 {stroke:#fe6f00;stroke-width:0.0138898}
                            .fil2 {fill:none}
-                           .fil3 {fill:#0093DD}
+                           .fil3 {fill:#fe6f00}
                            .fil0 {fill:#fff}
                            .fil1 {fill:#fff;fill-rule:nonzero}
                            ]]>
@@ -70,11 +70,13 @@
                 </div>
                 <div class="nav-bar">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a data-link="home">Home</a></li>
+                        <li><a data-link="about">About</a></li>
+                        <li><a data-link="portfolio">Portfolio</a></li>
+                        <li><a data-link="services">Services</a></li>
+                        <li><a data-link="clients">Clients</a></li>
+                        <li><a data-link="ourteam">Our Team</a></li>
+                        <li><a data-link="contact">Contact Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -84,7 +86,7 @@
         </div>
     </div>
 
-    <div class="index-about">
+    <div class="index-about" data-target="about">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -136,14 +138,14 @@
                             <li>From Humble Beginnings Come Great Things.</li>
                             <li>Today May Be Just Like Any Other Day, But It’s Yours!</li>
                         </ul>
-                        <a href="#">Read More</a>
+                        <a href="#">View Case Study</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <div class="container">
-        <div class="cnt-head">
+        <div class="cnt-head" data-target="portfolio">
             <h2>Our Portfolio</h2>
             <p>Nulla varius consequat magna, id molestie ipsum molestie ipsum</p>
         </div>
@@ -251,7 +253,7 @@
             </li>
         </ul>
     </div>
-    <div class="index-serv-full">
+    <div class="index-serv-full" data-target="services">
         <div class="container">
             <div class="cnt-head">
                 <h2>Our Services</h2>
@@ -349,7 +351,7 @@
             </div>
         </div>
     </div>
-    <div class="clients-full">
+    <div class="clients-full" data-target="clients">
         <div class="container">
             <div class="cnt-head">
                 <h2>Happy Clients</h2>
@@ -384,7 +386,7 @@
         </div>
     </div>
     <div class="container">
-        <div class="cnt-head">
+        <div class="cnt-head" data-target="ourteam">
             <h2>Our Team</h2>
             <p>Nulla varius consequat magna, id molestie ipsum molestie ipsum</p>
         </div>
@@ -508,7 +510,7 @@
             </div>
         </div>
     </div>
-    <div class="contact-full-box">
+    <div class="contact-full-box"  data-target="contact">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
