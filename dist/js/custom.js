@@ -4,23 +4,22 @@
 
 $(document).ready(function(){
 
+   //
+   //$('.bxslider').bxSlider({
+   //    auto:true,
+   //});
 
-   $('.bxslider').bxSlider({
-       auto:true,
-   });
+    var src = $(".slide-box").find("img").attr("src");
+    src = "url('"+ src +"')";
+    $(".slide-box").css("background-image",src);
 
-  $(window).scroll(function(){
-   if ($(this).scrollTop() >10) {
-     $(".nav-bar").addClass("wt-bg");
-   } else {
-     $(".nav-bar").removeClass("wt-bg");
-   }
-  });
-  var imgsrc = $(".image-box img").attr("src");
-
-    imgsrc = "url('"+ imgsrc +"')";
-
-    $(".image-box").css("background-image",imgsrc);
+    $(".serv-head a").click(function(){
+        $(".serv-head a").removeClass("active");
+        $(this).addClass("active");
+        var index = $(this).index();
+        $(".serv-body>div").hide();
+        $(".serv-body>div").eq(index).fadeIn();
+    });
 });
 
 

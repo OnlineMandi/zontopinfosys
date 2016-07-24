@@ -1,14 +1,24 @@
-.transition {
+.transition,
+.full-header header .nav-bar ul li a,
+.modern-design .info-box a,
+.portfolio ul li .port-item:before,
+.portfolio ul li .port-item a.link,
+.portfolio ul li .port-item .port-info {
   -moz-transition: all 0.3s ease 0s;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
-.block {
+.block,
+.index-serv-full .index-serv-box .serv-head,
+.index-serv-full .index-serv-box .serv-body {
   float: left;
   width: 100%;
 }
-.blockin {
+.blockin,
+.index-about .info-box,
+.index-about .info-list,
+.index-serv-full .index-serv-box {
   display: inline-block;
   width: 100%;
 }
@@ -19,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   outline: none;
-  font-family: Open Sans;
+  font-family: "Open Sans", arial, sans-serif;
 }
 a {
   color: #333;
@@ -40,5 +50,323 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Raleway,airal;
+  font-family: "Raleway", arial, sans-serif;
+}
+.full-header {
+  height: 100vh;
+  width: 100%;
+}
+.full-header header {
+  padding: 30px 0;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.full-header header .logo {
+  float: left;
+  padding: 0;
+  width: 150px;
+}
+.full-header header .logo img {
+  width: 100%;
+}
+.full-header header .nav-bar {
+  float: right;
+  padding: 9px 0;
+}
+.full-header header .nav-bar ul li {
+  float: left;
+  margin-left: 10px;
+}
+.full-header header .nav-bar ul li a {
+  color: #fff;
+  display: inline-block;
+  font-family: Raleway, arial, sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 5px 17px;
+  text-transform: uppercase;
+}
+.full-header header .nav-bar ul li a:hover {
+  background: #5D9CEC;
+}
+.full-header .slide-box {
+  background: #45494c none no-repeat scroll center center / cover;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.full-header .slide-box img {
+  display: none;
+}
+.index-about {
+  padding: 40px 0;
+}
+.index-about .info-box h3 {
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.index-about .info-box h4 {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1.2;
+  margin: 14px 0;
+}
+.index-about .info-box p {
+  color: #717171;
+  font-size: 15px;
+  line-height: 1.5;
+}
+.index-about .info-box a {
+  background: #fe6f00 none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  font-family: raleway;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 4px;
+  padding: 11px 17px;
+  text-transform: uppercase;
+}
+.index-about .info-box a:hover {
+  background: #ed5e00 none repeat scroll 0 0;
+}
+.index-about .info-list {
+  margin-top: 14px;
+}
+.index-about .info-list li {
+  float: left;
+  padding: 6px 12px;
+  width: 50%;
+}
+.index-about .info-list li h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 9px;
+}
+.index-about .info-list li p {
+  color: #717171;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.modern-design {
+  background: #1f2328 none repeat scroll 0 0;
+  padding: 50px 0;
+}
+.modern-design .imgbox {
+  width: 100%;
+}
+.modern-design .imgbox img {
+  width: 100%;
+}
+.modern-design .info-box {
+  color: #fff;
+}
+.modern-design .info-box h3 {
+  font-size: 39px;
+  line-height: 1.4;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.modern-design .info-box p {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.modern-design .info-box ul {
+  margin-top: 30px;
+}
+.modern-design .info-box ul li {
+  background: transparent url("../images/check.jpg") no-repeat scroll 0 4px;
+  font-size: 15px;
+  margin-bottom: 9px;
+  padding-left: 28px;
+}
+.modern-design .info-box a {
+  background: #fe6f00  none repeat scroll 0 0;
+  color: #fff;
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.modern-design .info-box a:hover {
+  background: #ed5e00 none repeat scroll 0 0;
+}
+.cnt-head {
+  padding: 30px 0 10px;
+  text-align: center;
+}
+.cnt-head h2 {
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 35px;
+  position: relative;
+  text-transform: uppercase;
+}
+.cnt-head h2:before {
+  background: #b1b1b1 none repeat scroll 0 0;
+  border-radius: 50%;
+  bottom: -20px;
+  content: "";
+  height: 9px;
+  left: 50%;
+  margin-left: -4px;
+  position: absolute;
+  width: 9px;
+}
+.cnt-head h2:after {
+  background: #b1b1b1 none repeat scroll 0 0;
+  bottom: -16px;
+  content: "";
+  height: 1px;
+  left: 50%;
+  margin-left: -70px;
+  position: absolute;
+  width: 140px;
+}
+.cnt-head p {
+  color: #6f6f6f;
+}
+.portfolio {
+  padding: 10px;
+  text-align: center;
+}
+.portfolio ul {
+  display: table;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+.portfolio ul li {
+  float: left;
+  padding: 10px;
+  width: 33.33%;
+}
+.portfolio ul li .port-item {
+  position: relative;
+  overflow: hidden;
+}
+.portfolio ul li .port-item:before {
+  background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+.portfolio ul li .port-item a.link {
+  color: #fff;
+  font-size: 24px;
+  left: 50%;
+  margin-left: -15px;
+  position: absolute;
+  top: -50px;
+}
+.portfolio ul li .port-item img {
+  width: 100%;
+}
+.portfolio ul li .port-item .port-info {
+  bottom: -60px;
+  color: #fff;
+  padding: 10px 11px;
+  position: absolute;
+  text-align: left;
+  width: 100%;
+}
+.portfolio ul li .port-item .port-info span {
+  font-family: raleway;
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.portfolio ul li .port-item .port-info p {
+  color: #bfbfbf;
+  font-size: 12px;
+  margin: 0;
+}
+.portfolio ul li .port-item .port-info a {
+  background: #fe6f00 none repeat scroll 0 0;
+  bottom: 12px;
+  color: #fff;
+  padding: 4px 32px;
+  position: absolute;
+  right: 12px;
+  text-transform: uppercase;
+}
+.portfolio ul li .port-item:hover:before {
+  background: rgba(0, 0, 0, 0.8) none repeat scroll 0 0;
+}
+.portfolio ul li .port-item:hover a.link {
+  top: 37%;
+}
+.portfolio ul li .port-item:hover .port-info {
+  bottom: 0;
+}
+.index-serv-full {
+  background: #eee none repeat scroll 0 0;
+  padding: 20px 0 40px;
+}
+.index-serv-full .index-serv-box {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+.index-serv-full .index-serv-box .serv-head a {
+  cursor: pointer;
+  float: left;
+  font-family: raleway;
+  font-size: 16px;
+  padding: 18px 25px 14px;
+  text-transform: capitalize;
+}
+.index-serv-full .index-serv-box .serv-head a.active {
+  background: #fff none repeat scroll 0 0;
+  border-radius: 7px 7px 0 0;
+  box-shadow: 0 0 4px #dbdbdb, 0 0 0 1px #d8d8d8 inset;
+  position: relative;
+}
+.index-serv-full .index-serv-box .serv-head a.active:before {
+  background: #fff none repeat scroll 0 0;
+  content: "";
+  height: 6px;
+  left: 1px;
+  position: absolute;
+  right: 1px;
+  top: 97%;
+}
+.index-serv-full .index-serv-box .serv-body {
+  background: #fff none repeat scroll 0 0;
+  box-shadow: 0 0 4px #dbdbdb,0 0 0 1px #d8d8d8 inset;
+}
+.index-serv-full .index-serv-box .serv-body > div {
+  display: none;
+}
+.index-serv-full .index-serv-box .serv-body img {
+  padding: 20px 5px;
+  width: 100%;
+}
+.index-serv-full .index-serv-box .serv-body h3 {
+  font-size: 27px;
+  font-weight: 500;
+  margin: 49px 0 15px;
+}
+.index-serv-full .index-serv-box .serv-body p {
+  color: #575757;
+  line-height: 1.5;
+}
+.index-serv-full .index-serv-box .serv-body ul {
+  float: left;
+  margin-top: 27px;
+  width: 100%;
+}
+.index-serv-full .index-serv-box .serv-body ul li {
+  background: transparent url("../images/check-wt.jpg") no-repeat scroll 0 4px;
+  float: left;
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  width: 50%;
+}
+.clients-full {
+  background: #1f2328 url("../images/bg2.jpg") repeat scroll 0 0 / cover;
+  height: 560px;
+  width: 100%;
 }
