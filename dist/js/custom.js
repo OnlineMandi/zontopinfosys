@@ -4,10 +4,10 @@
 
 $(document).ready(function(){
 
-   //
-   //$('.bxslider').bxSlider({
-   //    auto:true,
-   //});
+
+   $('.clients-slide').bxSlider({
+       auto:true
+   });
 
     var src = $(".slide-box").find("img").attr("src");
     src = "url('"+ src +"')";
@@ -20,6 +20,15 @@ $(document).ready(function(){
         $(".serv-body>div").hide();
         $(".serv-body>div").eq(index).fadeIn();
     });
+
+    $(window).scroll(function(){
+        if ($(this).scrollTop() >10) {
+            $("header").addClass("wt-bg");
+        } else {
+            $("header").removeClass("wt-bg");
+        }
+    });
+
 });
 
 
