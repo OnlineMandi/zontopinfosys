@@ -33,6 +33,8 @@ $(document).ready(function(){
 
 
 
+
+
     //Click event to scroll to top
     $('.nav-bar ul li a').click(function(){
         var datalink = $(this).attr("data-link");
