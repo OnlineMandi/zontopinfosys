@@ -114,7 +114,7 @@ h1,h2,h3,h4,h5,h6{
     }
   }
   .slide-box{
-    background: #45494c none no-repeat scroll center center / cover ;
+    background: #45494c none no-repeat scroll top center / cover ;
     height: 100vh;
     overflow: hidden;
     position: relative;
@@ -123,7 +123,6 @@ h1,h2,h3,h4,h5,h6{
     }
   }
 }
-
 .index-about{
   padding: 40px 0;
   .info-box{
@@ -259,6 +258,7 @@ h1,h2,h3,h4,h5,h6{
     color: #6f6f6f;
   }
 }
+
 .portfolio {
   padding: 10px;
   text-align: center;
@@ -268,11 +268,12 @@ h1,h2,h3,h4,h5,h6{
     max-width: 1500px;
     li{
       float: left;
-      padding: 10px;
+      padding: 12px;
       width: 33.33%;
       .port-item{
-        position: relative;
+        box-shadow: 0 0 3px #9b9b9b;
         overflow: hidden;
+        position: relative;
         &:before{
           background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
           content: "";

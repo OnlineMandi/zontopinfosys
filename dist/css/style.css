@@ -137,7 +137,7 @@ h6 {
   background: #fe6f00;
 }
 .full-header .slide-box {
-  background: #45494c none no-repeat scroll center center / cover;
+  background: #45494c none no-repeat scroll top center / cover;
   height: 100vh;
   overflow: hidden;
   position: relative;
@@ -285,12 +285,13 @@ h6 {
 }
 .portfolio ul li {
   float: left;
-  padding: 10px;
+  padding: 12px;
   width: 33.33%;
 }
 .portfolio ul li .port-item {
-  position: relative;
+  box-shadow: 0 0 3px #9b9b9b;
   overflow: hidden;
+  position: relative;
 }
 .portfolio ul li .port-item:before {
   background: rgba(0, 0, 0, 0.1) none repeat scroll 0 0;
